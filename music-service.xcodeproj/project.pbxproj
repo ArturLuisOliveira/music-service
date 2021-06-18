@@ -16,6 +16,8 @@
 		34901C6F267D0F4900CD9020 /* Favorites.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901C6E267D0F4900CD9020 /* Favorites.storyboard */; };
 		34901C71267D0F6500CD9020 /* Library.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901C70267D0F6500CD9020 /* Library.storyboard */; };
 		34901C73267D0F7900CD9020 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901C72267D0F7900CD9020 /* Discover.storyboard */; };
+		34901C77267D195E00CD9020 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34901C75267D195D00CD9020 /* data.json */; };
+		34901C78267D195E00CD9020 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34901C76267D195E00CD9020 /* MusicService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		34901C6E267D0F4900CD9020 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		34901C70267D0F6500CD9020 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		34901C72267D0F7900CD9020 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
+		34901C75267D195D00CD9020 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
+		34901C76267D195E00CD9020 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,7 @@
 		34901C56267D0B7800CD9020 /* music-service */ = {
 			isa = PBXGroup;
 			children = (
+				34901C74267D194400CD9020 /* Services */,
 				34901C6D267D0F3000CD9020 /* Favorites */,
 				34901C6C267D0F1300CD9020 /* Library */,
 				34901C6B267D0F0800CD9020 /* Discover */,
@@ -98,6 +103,15 @@
 				34901C6E267D0F4900CD9020 /* Favorites.storyboard */,
 			);
 			path = Favorites;
+			sourceTree = "<group>";
+		};
+		34901C74267D194400CD9020 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				34901C75267D195D00CD9020 /* data.json */,
+				34901C76267D195E00CD9020 /* MusicService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -158,6 +172,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				34901C64267D0B7B00CD9020 /* LaunchScreen.storyboard in Resources */,
+				34901C77267D195E00CD9020 /* data.json in Resources */,
 				34901C61267D0B7A00CD9020 /* Assets.xcassets in Resources */,
 				34901C71267D0F6500CD9020 /* Library.storyboard in Resources */,
 				34901C6F267D0F4900CD9020 /* Favorites.storyboard in Resources */,
@@ -176,6 +191,7 @@
 				34901C5C267D0B7800CD9020 /* ViewController.swift in Sources */,
 				34901C58267D0B7800CD9020 /* AppDelegate.swift in Sources */,
 				34901C5A267D0B7800CD9020 /* SceneDelegate.swift in Sources */,
+				34901C78267D195E00CD9020 /* MusicService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
