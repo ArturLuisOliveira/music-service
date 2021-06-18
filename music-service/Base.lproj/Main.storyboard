@@ -28,7 +28,7 @@
         <!--Discover-->
         <scene sceneID="cL4-L0-50v">
             <objects>
-                <viewControllerPlaceholder storyboardName="Discover" referencedIdentifier="Discover" id="00G-tk-1ns" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="Discover" id="00G-tk-1ns" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="wt6-ba-tES"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IXF-oO-Mc8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
