@@ -32,8 +32,8 @@
 		34901C6E267D0F4900CD9020 /* Favorites.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Favorites.storyboard; sourceTree = "<group>"; };
 		34901C70267D0F6500CD9020 /* Library.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Library.storyboard; sourceTree = "<group>"; };
 		34901C72267D0F7900CD9020 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
-		34901C75267D195D00CD9020 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
-		34901C76267D195E00CD9020 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		34901C75267D195D00CD9020 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = data.json; path = ../data.json; sourceTree = "<group>"; };
+		34901C76267D195E00CD9020 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MusicService.swift; path = ../MusicService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,7 +84,9 @@
 		34901C6B267D0F0800CD9020 /* Discover */ = {
 			isa = PBXGroup;
 			children = (
-				34901C72267D0F7900CD9020 /* Discover.storyboard */,
+				34901C85267D237D00CD9020 /* controller */,
+				34901C84267D237700CD9020 /* views */,
+				34901C83267D236700CD9020 /* storyboards */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -92,7 +94,9 @@
 		34901C6C267D0F1300CD9020 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				34901C70267D0F6500CD9020 /* Library.storyboard */,
+				34901C82267D234F00CD9020 /* storyboards */,
+				34901C81267D234B00CD9020 /* views */,
+				34901C80267D234400CD9020 /* controller */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -100,7 +104,9 @@
 		34901C6D267D0F3000CD9020 /* Favorites */ = {
 			isa = PBXGroup;
 			children = (
-				34901C6E267D0F4900CD9020 /* Favorites.storyboard */,
+				34901C7F267D22C900CD9020 /* controller */,
+				34901C7E267D22C300CD9020 /* views */,
+				34901C7D267D22B800CD9020 /* storyboards */,
 			);
 			path = Favorites;
 			sourceTree = "<group>";
@@ -108,10 +114,84 @@
 		34901C74267D194400CD9020 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				34901C86267D25AC00CD9020 /* Music Service */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		34901C7D267D22B800CD9020 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34901C6E267D0F4900CD9020 /* Favorites.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		34901C7E267D22C300CD9020 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		34901C7F267D22C900CD9020 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		34901C80267D234400CD9020 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		34901C81267D234B00CD9020 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		34901C82267D234F00CD9020 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34901C70267D0F6500CD9020 /* Library.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		34901C83267D236700CD9020 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34901C72267D0F7900CD9020 /* Discover.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		34901C84267D237700CD9020 /* views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		34901C85267D237D00CD9020 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		34901C86267D25AC00CD9020 /* Music Service */ = {
+			isa = PBXGroup;
+			children = (
 				34901C75267D195D00CD9020 /* data.json */,
 				34901C76267D195E00CD9020 /* MusicService.swift */,
 			);
-			path = Services;
+			path = "Music Service";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
