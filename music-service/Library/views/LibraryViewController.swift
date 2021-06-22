@@ -25,10 +25,7 @@ class LibraryViewController: UIViewController {
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "libraryToCollectionEditor", let collection = sender as? MusicCollection {
-            //TODO
-            let navigationController = segue.destination as! UINavigationController
-            let destination = navigationController.visibleViewController as! CollectionEditorViewController
-            
+            let destination = segue.destination as! CollectionEditorViewController
             destination.collection = collection
         }
     }
