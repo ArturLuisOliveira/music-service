@@ -29,6 +29,9 @@
 		34901C73267D0F7900CD9020 /* Discover.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34901C72267D0F7900CD9020 /* Discover.storyboard */; };
 		34901C77267D195E00CD9020 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = 34901C75267D195D00CD9020 /* data.json */; };
 		34901C78267D195E00CD9020 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34901C76267D195E00CD9020 /* MusicService.swift */; };
+		80477853268103E9001304BF /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80477852268103E9001304BF /* FavoritesTableViewCell.swift */; };
+		8047785526810408001304BF /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047785426810408001304BF /* FavoritesViewController.swift */; };
+		80477857268117DA001304BF /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80477856268117DA001304BF /* FavoritesController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		34901C72267D0F7900CD9020 /* Discover.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Discover.storyboard; sourceTree = "<group>"; };
 		34901C75267D195D00CD9020 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		34901C76267D195E00CD9020 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		80477852268103E9001304BF /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
+		8047785426810408001304BF /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
+		80477856268117DA001304BF /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +221,8 @@
 		34901C7E267D22C300CD9020 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				80477852268103E9001304BF /* FavoritesTableViewCell.swift */,
+				8047785426810408001304BF /* FavoritesViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 		34901C7F267D22C900CD9020 /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				80477856268117DA001304BF /* FavoritesController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -364,6 +373,8 @@
 				348BA126267E6AAC0052042D /* LibraryController.swift in Sources */,
 				348BA133267E813B0052042D /* CollectionTableViewDelegate.swift in Sources */,
 				348BA128267E6DD30052042D /* CollectionsTableViewDataSource.swift in Sources */,
+				80477853268103E9001304BF /* FavoritesTableViewCell.swift in Sources */,
+				8047785526810408001304BF /* FavoritesViewController.swift in Sources */,
 				348BA124267E68300052042D /* LibraryViewController.swift in Sources */,
 				34901C58267D0B7800CD9020 /* AppDelegate.swift in Sources */,
 				34665FC926817372003B7743 /* CollectionDetailsViewController.swift in Sources */,
@@ -372,6 +383,7 @@
 				348BA13526810B4B0052042D /* CollectionEditorController.swift in Sources */,
 				348BA13726811C990052042D /* MusicsDataSource.swift in Sources */,
 				34901C78267D195E00CD9020 /* MusicService.swift in Sources */,
+				80477857268117DA001304BF /* FavoritesController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,7 +531,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5QH5STGGP;
+				DEVELOPMENT_TEAM = VHG5SDJ6H6;
 				INFOPLIST_FILE = "music-service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -538,7 +550,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = R5QH5STGGP;
+				DEVELOPMENT_TEAM = VHG5SDJ6H6;
 				INFOPLIST_FILE = "music-service/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
