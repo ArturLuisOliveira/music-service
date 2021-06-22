@@ -15,7 +15,6 @@ class CollectionTableViewDelegate: NSObject, UITableViewDelegate {
         self.collections = collections
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print(indexPath)
         let collection = self.collections[indexPath.row]
         self.view.performSegue(withIdentifier: "libraryToCollectionEditor", sender: collection)
     }

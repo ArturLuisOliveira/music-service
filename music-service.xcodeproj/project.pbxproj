@@ -7,12 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		34665FC5268172A1003B7743 /* CollectionDetails.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 34665FC4268172A1003B7743 /* CollectionDetails.storyboard */; };
+		34665FC926817372003B7743 /* CollectionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34665FC826817372003B7743 /* CollectionDetailsViewController.swift */; };
 		348BA124267E68300052042D /* LibraryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA123267E68300052042D /* LibraryViewController.swift */; };
 		348BA126267E6AAC0052042D /* LibraryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA125267E6AAC0052042D /* LibraryController.swift */; };
 		348BA128267E6DD30052042D /* CollectionsTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA127267E6DD30052042D /* CollectionsTableViewDataSource.swift */; };
 		348BA12E267E7DE50052042D /* CollectionEditor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348BA12D267E7DE50052042D /* CollectionEditor.storyboard */; };
 		348BA130267E7E0D0052042D /* CollectionEditorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA12F267E7E0D0052042D /* CollectionEditorViewController.swift */; };
 		348BA133267E813B0052042D /* CollectionTableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA132267E813B0052042D /* CollectionTableViewDelegate.swift */; };
+		348BA13526810B4B0052042D /* CollectionEditorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA13426810B4B0052042D /* CollectionEditorController.swift */; };
+		348BA13726811C990052042D /* MusicsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA13626811C990052042D /* MusicsDataSource.swift */; };
+		348BA1392681230F0052042D /* MusicsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BA1382681230F0052042D /* MusicsTableViewCell.swift */; };
 		34901C58267D0B7800CD9020 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34901C57267D0B7800CD9020 /* AppDelegate.swift */; };
 		34901C5A267D0B7800CD9020 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34901C59267D0B7800CD9020 /* SceneDelegate.swift */; };
 		34901C5C267D0B7800CD9020 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34901C5B267D0B7800CD9020 /* ViewController.swift */; };
@@ -30,12 +35,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		34665FC4268172A1003B7743 /* CollectionDetails.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionDetails.storyboard; sourceTree = "<group>"; };
+		34665FC826817372003B7743 /* CollectionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionDetailsViewController.swift; sourceTree = "<group>"; };
 		348BA123267E68300052042D /* LibraryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewController.swift; sourceTree = "<group>"; };
 		348BA125267E6AAC0052042D /* LibraryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryController.swift; sourceTree = "<group>"; };
 		348BA127267E6DD30052042D /* CollectionsTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionsTableViewDataSource.swift; sourceTree = "<group>"; };
 		348BA12D267E7DE50052042D /* CollectionEditor.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionEditor.storyboard; sourceTree = "<group>"; };
 		348BA12F267E7E0D0052042D /* CollectionEditorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEditorViewController.swift; sourceTree = "<group>"; };
 		348BA132267E813B0052042D /* CollectionTableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewDelegate.swift; sourceTree = "<group>"; };
+		348BA13426810B4B0052042D /* CollectionEditorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionEditorController.swift; sourceTree = "<group>"; };
+		348BA13626811C990052042D /* MusicsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsDataSource.swift; sourceTree = "<group>"; };
+		348BA1382681230F0052042D /* MusicsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsTableViewCell.swift; sourceTree = "<group>"; };
 		34901C54267D0B7800CD9020 /* music-service.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "music-service.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		34901C57267D0B7800CD9020 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34901C59267D0B7800CD9020 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +75,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34665FC226817278003B7743 /* Collection Details */ = {
+			isa = PBXGroup;
+			children = (
+				34665FC726817351003B7743 /* views */,
+				34665FC32681727F003B7743 /* storyboards */,
+			);
+			path = "Collection Details";
+			sourceTree = "<group>";
+		};
+		34665FC32681727F003B7743 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				34665FC4268172A1003B7743 /* CollectionDetails.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		34665FC726817351003B7743 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				34665FC826817372003B7743 /* CollectionDetailsViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 		348BA129267E7DA80052042D /* Collection Editor */ = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				348BA12F267E7E0D0052042D /* CollectionEditorViewController.swift */,
+				348BA13626811C990052042D /* MusicsDataSource.swift */,
+				348BA1382681230F0052042D /* MusicsTableViewCell.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -94,6 +131,7 @@
 		348BA12C267E7DC70052042D /* controller */ = {
 			isa = PBXGroup;
 			children = (
+				348BA13426810B4B0052042D /* CollectionEditorController.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -117,6 +155,7 @@
 		34901C56267D0B7800CD9020 /* music-service */ = {
 			isa = PBXGroup;
 			children = (
+				34665FC226817278003B7743 /* Collection Details */,
 				348BA129267E7DA80052042D /* Collection Editor */,
 				34901C74267D194400CD9020 /* Services */,
 				34901C6D267D0F3000CD9020 /* Favorites */,
@@ -310,6 +349,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				34665FC5268172A1003B7743 /* CollectionDetails.storyboard in Resources */,
 				34901C64267D0B7B00CD9020 /* LaunchScreen.storyboard in Resources */,
 				34901C77267D195E00CD9020 /* data.json in Resources */,
 				34901C61267D0B7A00CD9020 /* Assets.xcassets in Resources */,
@@ -337,7 +377,11 @@
 				8047785526810408001304BF /* FavoritesViewController.swift in Sources */,
 				348BA124267E68300052042D /* LibraryViewController.swift in Sources */,
 				34901C58267D0B7800CD9020 /* AppDelegate.swift in Sources */,
+				34665FC926817372003B7743 /* CollectionDetailsViewController.swift in Sources */,
+				348BA1392681230F0052042D /* MusicsTableViewCell.swift in Sources */,
 				34901C5A267D0B7800CD9020 /* SceneDelegate.swift in Sources */,
+				348BA13526810B4B0052042D /* CollectionEditorController.swift in Sources */,
+				348BA13726811C990052042D /* MusicsDataSource.swift in Sources */,
 				34901C78267D195E00CD9020 /* MusicService.swift in Sources */,
 				80477857268117DA001304BF /* FavoritesController.swift in Sources */,
 			);

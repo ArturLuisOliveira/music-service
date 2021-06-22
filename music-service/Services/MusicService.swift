@@ -46,12 +46,6 @@ struct MusicCollection: Hashable, Decodable {
         type == .playlist
     }
     
-    var length: TimeInterval {
-        self.musics.reduce(0.0) {
-            acc, cur in acc + cur.length
-        }
-    }
-    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }
@@ -127,9 +121,9 @@ final class MusicService {
     
     func toggleFavorite(music: Music, isFavorite: Bool) {
         if isFavorite {
-            favoriteMusics.append(music)
-        } else {
             favoriteMusics.removeAll { $0 == music }
+        } else {
+            favoriteMusics.append(music)
         }
         
         // update persisted list with IDs of favorite musics

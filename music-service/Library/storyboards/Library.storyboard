@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fYI-Xb-Icd">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -11,30 +11,20 @@
         <!--Library-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="Library" id="Y6W-OH-hqX" customClass="LibraryViewController" customModule="music_service" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Y6W-OH-hqX" customClass="LibraryViewController" customModule="music_service" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Library" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Sw-EP-hi3">
-                                <rect key="frame" x="181" y="438" width="53" height="21"/>
+                                <rect key="frame" x="180" y="438" width="53" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <navigationBar contentMode="scaleToFill" largeTitles="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fdn-9q-SFy">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="136"/>
-                                <color key="backgroundColor" systemColor="systemFillColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="136" id="gW5-db-nfI"/>
-                                </constraints>
-                                <items>
-                                    <navigationItem title="Title" id="21R-LK-XlO"/>
-                                </items>
-                            </navigationBar>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="95E-Wm-R9p">
-                                <rect key="frame" x="0.0" y="136" width="414" height="677"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CollectionCellIdentifier" textLabel="yn0-7w-YQN" detailTextLabel="Wcz-bc-dZ6" imageView="rkW-hw-vfR" style="IBUITableViewCellStyleSubtitle" id="gtt-Ez-XJS">
                                         <rect key="frame" x="0.0" y="24.5" width="414" height="43.5"/>
@@ -72,15 +62,13 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="95E-Wm-R9p" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="7IW-F2-gFB"/>
-                            <constraint firstItem="fdn-9q-SFy" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="MS7-KJ-9Ut"/>
+                            <constraint firstItem="95E-Wm-R9p" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="CMe-Fu-SZQ"/>
                             <constraint firstItem="95E-Wm-R9p" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="RG8-RH-y9u"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="95E-Wm-R9p" secondAttribute="trailing" id="Tld-gY-m9r"/>
-                            <constraint firstItem="fdn-9q-SFy" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="emm-RG-LQw"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="fdn-9q-SFy" secondAttribute="trailing" id="jRH-ig-rTl"/>
-                            <constraint firstItem="95E-Wm-R9p" firstAttribute="top" secondItem="fdn-9q-SFy" secondAttribute="bottom" id="vFx-i9-gGV"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Library" image="text.book.closed.fill" catalog="system" id="WCn-4l-ohT"/>
+                    <tabBarItem key="tabBarItem" title="Item" image="text.book.closed.fill" catalog="system" id="zCq-xB-1m8"/>
+                    <navigationItem key="navigationItem" title="Library" largeTitleDisplayMode="always" id="iQy-5h-m76"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="CollectionsTableView" destination="95E-Wm-R9p" id="T0z-f0-Jrm"/>
@@ -89,17 +77,36 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
+            <point key="canvasLocation" x="1047.8260869565217" y="130.58035714285714"/>
         </scene>
-        <!--CollectionEditor-->
+        <!--CollectionEditorId-->
         <scene sceneID="CXX-bh-IB1">
             <objects>
-                <viewControllerPlaceholder storyboardName="CollectionEditor" id="ELs-CN-6ll" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="CollectionEditor" referencedIdentifier="CollectionEditorId" id="ELs-CN-6ll" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="eV2-qe-ri4"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YT9-8K-Lai" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="991" y="131"/>
+            <point key="canvasLocation" x="1826" y="131"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="yRJ-bL-mEE">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="fYI-Xb-Icd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Eu9-c3-ncF">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="ueN-6r-pnS"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="I8V-FU-WYq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="130.58035714285714"/>
         </scene>
     </scenes>
     <resources>
@@ -107,9 +114,6 @@
         <image name="text.book.closed.fill" catalog="system" width="115" height="128"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemFillColor">
-            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
