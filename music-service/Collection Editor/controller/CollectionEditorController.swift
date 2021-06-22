@@ -29,7 +29,6 @@ struct CollectionEditorController {
     static func isFavorite(music:Music?) -> Bool {
         do {
             if let name = UserDefaults.standard.string(forKey: "favorite-musics-ids") {
-                print(name)
                 return true
             }
         } catch {

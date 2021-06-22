@@ -58,7 +58,14 @@ class CollectionEditorViewController: UIViewController {
         }
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "libraryToCollectionEditor", let collection = sender as? MusicCollection {
+            let destination = segue.destination as! CollectionEditorViewController
+            destination.collection = collection
+        }
+    }
+    
     @IBAction func goToCollectionsDetails(_ sender: Any) {
-        performSegue(withIdentifier: "ToCollectionsDetailsSegue", sender: nil)
+        performSegue(withIdentifier: "ToCollectionsDetailsSegue", sender: self.collection)
     }
 }
