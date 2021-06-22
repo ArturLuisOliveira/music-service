@@ -46,6 +46,12 @@ struct MusicCollection: Hashable, Decodable {
         type == .playlist
     }
     
+    var length: TimeInterval {
+        self.musics.reduce(0.0) {
+            acc, cur in acc + cur.length
+        }
+    }
+    
     func hash(into hasher: inout Hasher) {
         hasher.combine(id)
     }

@@ -7,11 +7,22 @@
 
 import UIKit
 
-class CollectionDetailsViewController: UIViewController {
 
+class CollectionDetailsViewController: UIViewController {
+    
+    var collection: MusicCollection?
     override func viewDidLoad() {
         super.viewDidLoad()
-
+//
+//        if let length = collection?.length, let count = collection?.musics.count {
+//            let formatter = DateComponentsFormatter()
+//            formatter.unitsStyle = .full
+//            let duration = formatter.string(for: length)
+//
+//            print(formatter.string(for: length))
+//            self.songsCountAndDurationLabel.text = "\(count) songs, \(duration)"
+//        }
+       
         // Do any additional setup after loading the view.
     }
     
