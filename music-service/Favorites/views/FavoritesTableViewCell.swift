@@ -12,7 +12,7 @@ class FavoritesTableViewCell: UITableViewCell {
     @IBOutlet weak var coverImageView: UIImageView!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var singerLabel: UILabel!
-    @IBOutlet weak var favoriteImageView: UIImageView!
+    @IBOutlet weak var favoriteButton: UIButton!
     private var controller: FavoritesController?
     
     override func awakeFromNib() {
@@ -24,6 +24,10 @@ class FavoritesTableViewCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
+    }
+    
+    @IBAction func toggleFavorite(_ sender: Any) {
+        print("Remover dos favoritos")
     }
     
 }

@@ -32,6 +32,10 @@
 		80477853268103E9001304BF /* FavoritesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80477852268103E9001304BF /* FavoritesTableViewCell.swift */; };
 		8047785526810408001304BF /* FavoritesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8047785426810408001304BF /* FavoritesViewController.swift */; };
 		80477857268117DA001304BF /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80477856268117DA001304BF /* FavoritesController.swift */; };
+		80C693E82682587B00A147DD /* PlayingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 80C693E72682587B00A147DD /* PlayingView.xib */; };
+		80C693EA2682592600A147DD /* PlayingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C693E92682592600A147DD /* PlayingView.swift */; };
+		80C693ED26825ED700A147DD /* Playing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C693EC26825ED700A147DD /* Playing.storyboard */; };
+		80C693F0268261F700A147DD /* PlayingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C693EF268261F700A147DD /* PlayingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,10 @@
 		80477852268103E9001304BF /* FavoritesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesTableViewCell.swift; sourceTree = "<group>"; };
 		8047785426810408001304BF /* FavoritesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesViewController.swift; sourceTree = "<group>"; };
 		80477856268117DA001304BF /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
+		80C693E72682587B00A147DD /* PlayingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PlayingView.xib; sourceTree = "<group>"; };
+		80C693E92682592600A147DD /* PlayingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingView.swift; sourceTree = "<group>"; };
+		80C693EC26825ED700A147DD /* Playing.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Playing.storyboard; sourceTree = "<group>"; };
+		80C693EF268261F700A147DD /* PlayingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +163,7 @@
 		34901C56267D0B7800CD9020 /* music-service */ = {
 			isa = PBXGroup;
 			children = (
+				80C693E62682585E00A147DD /* Playing */,
 				34665FC226817278003B7743 /* Collection Details */,
 				348BA129267E7DA80052042D /* Collection Editor */,
 				34901C74267D194400CD9020 /* Services */,
@@ -292,6 +301,33 @@
 			path = "Music Service";
 			sourceTree = "<group>";
 		};
+		80C693E62682585E00A147DD /* Playing */ = {
+			isa = PBXGroup;
+			children = (
+				80C693EE268261DE00A147DD /* views */,
+				80C693EB26825E9500A147DD /* storyboard */,
+			);
+			path = Playing;
+			sourceTree = "<group>";
+		};
+		80C693EB26825E9500A147DD /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				80C693E72682587B00A147DD /* PlayingView.xib */,
+				80C693EC26825ED700A147DD /* Playing.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		80C693EE268261DE00A147DD /* views */ = {
+			isa = PBXGroup;
+			children = (
+				80C693EF268261F700A147DD /* PlayingViewController.swift */,
+				80C693E92682592600A147DD /* PlayingView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -356,6 +392,8 @@
 				34901C71267D0F6500CD9020 /* Library.storyboard in Resources */,
 				34901C6F267D0F4900CD9020 /* Favorites.storyboard in Resources */,
 				348BA12E267E7DE50052042D /* CollectionEditor.storyboard in Resources */,
+				80C693E82682587B00A147DD /* PlayingView.xib in Resources */,
+				80C693ED26825ED700A147DD /* Playing.storyboard in Resources */,
 				34901C5F267D0B7800CD9020 /* Main.storyboard in Resources */,
 				34901C73267D0F7900CD9020 /* Discover.storyboard in Resources */,
 			);
@@ -381,7 +419,9 @@
 				348BA1392681230F0052042D /* MusicsTableViewCell.swift in Sources */,
 				34901C5A267D0B7800CD9020 /* SceneDelegate.swift in Sources */,
 				348BA13526810B4B0052042D /* CollectionEditorController.swift in Sources */,
+				80C693EA2682592600A147DD /* PlayingView.swift in Sources */,
 				348BA13726811C990052042D /* MusicsDataSource.swift in Sources */,
+				80C693F0268261F700A147DD /* PlayingViewController.swift in Sources */,
 				34901C78267D195E00CD9020 /* MusicService.swift in Sources */,
 				80477857268117DA001304BF /* FavoritesController.swift in Sources */,
 			);
