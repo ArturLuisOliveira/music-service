@@ -214,6 +214,7 @@
                 <navigationController storyboardIdentifier="Favorites" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FPe-vO-ukg" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="nzm-j7-xCh"/>
                     <toolbarItems/>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="arm-Ek-dAO">
                         <rect key="frame" x="0.0" y="44" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>

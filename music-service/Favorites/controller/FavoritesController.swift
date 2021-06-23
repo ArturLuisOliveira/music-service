@@ -25,11 +25,16 @@ class FavoritesController {
         let m2: Music = Music(id: "e1f66c09f889547da786", title: "", artist: "", length: 123)
         let m3: Music = Music(id: "7b4b11ae9f12f3b52e1a", title: "", artist: "", length: 123)
         let m4: Music = Music(id: "450e7efd696ed8378ec0", title: "", artist: "", length: 123)
+        let m5: Music = Music(id: "f60749776c226c6acf03", title: "", artist: "", length: 123)
+        let m6: Music = Music(id: "7c6d7327cd092d57ab92", title: "", artist: "", length: 123)
+        
         
         favoritesMusicList.append(m1)
         favoritesMusicList.append(m2)
         favoritesMusicList.append(m3)
         favoritesMusicList.append(m4)
+        favoritesMusicList.append(m5)
+        favoritesMusicList.append(m6)
         
         UserDefaults.standard.setValue(favoritesMusicList.map(\.id), forKey: "favorite-musics-ids")
     }
