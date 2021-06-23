@@ -9,32 +9,42 @@ import UIKit
 
 
 class CollectionDetailsViewController: UIViewController {
+    @IBOutlet var tableView: UITableView!
+    
+    @IBAction func doneBarButtonItem(_ sender: UIBarButtonItem) {
+        dismiss(animated: true)
+    }
     
     var collection: MusicCollection?
+    var tableViewDataSource: UITableViewDataSource?
+    
     override func viewDidLoad() {
+        tableView.dataSource = self
         super.viewDidLoad()
-//
-//        if let length = collection?.length, let count = collection?.musics.count {
-//            let formatter = DateComponentsFormatter()
-//            formatter.unitsStyle = .full
-//            let duration = formatter.string(for: length)
-//
-//            print(formatter.string(for: length))
-//            self.songsCountAndDurationLabel.text = "\(count) songs, \(duration)"
-//        }
-       
-        // Do any additional setup after loading the view.
+        tableView.tableFooterView = UIView()
+    }
+}
+
+extension CollectionDetailsViewController:UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        2
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        1
     }
     
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if indexPath.section == 0 {
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "Header") as! CollectionDetailsHeaderTableViewCell
+            cell.collection = self.collection
+            return cell
+        } else {
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "Content") as! CollectionDetailsContentTableViewCell
+            cell.collection = self.collection
+            return cell
+        }
+        
     }
-    */
-
 }
