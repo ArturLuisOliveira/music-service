@@ -28,11 +28,13 @@ class MusicsTableViewCell: UITableViewCell {
         coverImageView.image = CollectionEditorController.getAlbumImage(music?.id)
         musicTitleLabel.text = music?.title
         musicArtistLabel.text = music?.artist
+        favoriteButton.setImage(UIImage(systemName: self.isFavorite ? "heart.fill" : "heart"), for: .normal)
     }
     
     @IBAction func toggleFavorite(_ sender: UIButton) {
         CollectionEditorController.toggleFavorite(music: self.music) {
             isFavorite in self.isFavorite = isFavorite
+            self.favoriteButton.setImage(UIImage(systemName: isFavorite ? "heart.fill" : "heart"), for: .normal)
         }
     }
    

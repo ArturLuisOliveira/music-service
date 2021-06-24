@@ -28,14 +28,17 @@ struct CollectionEditorController {
     
     static func isFavorite(music:Music?) -> Bool {
         do {
-            if let name = UserDefaults.standard.string(forKey: "favorite-musics-ids") {
-                return true
+            let musicService = try MusicService()
+            guard  let music = music else {
+                return false
             }
+            print(musicService.favoriteMusics)
+            return musicService.favoriteMusics.contains(music)
+            
         } catch {
             print("Is favorite function error.")
             return false
         }
-        return false
     }
     
     static func toggleFavorite(music: Music?, handler: (_ newValue: Bool)-> Void) {

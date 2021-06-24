@@ -26,13 +26,10 @@ class CollectionTableViewDataSource: NSObject,UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = CollectionsTableView.dequeueReusableCell(withIdentifier: "CollectionCellIdentifier", for: indexPath)
+        let cell = CollectionsTableView.dequeueReusableCell(withIdentifier: "CollectionTableViewCell", for: indexPath) as! CollectionTableViewCell
         let collection = self.collections[indexPath.row]
-        
-        cell.imageView?.image = LibraryController.findCollectionCover(id: collection.id)
-        cell.textLabel?.text = collection.title
-        cell.detailTextLabel?.text = "\(collection.type.rawValue) - \(collection.mainPerson)"
-        
+        cell.collection = collection
+        cell.awakeFromNib()
         return cell
     }
     

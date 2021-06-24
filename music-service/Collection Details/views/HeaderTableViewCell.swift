@@ -15,22 +15,23 @@ class CollectionDetailsHeaderTableViewCell: UITableViewCell {
     @IBOutlet var releaseLabel: UILabel!
     var collection: MusicCollection?
     
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
         if let collection = collection {
+            if let image = ColllectionDetailsController.getCollectionImage(id: collection.id) {
+                coverImageView.image = image
+            }
             titleLabel.text = collection.title
             artistLabel.text = "Album by \(collection.mainPerson)"
             albumInfoLabel.text = "\(collection.musics.count) songs, \(DateService.formatDuration(duration: collection.length))"
             releaseLabel.text = "Released in \(DateService.formatDate(date: collection.referenceDate))"
-            
         }
+       
+    }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
 
