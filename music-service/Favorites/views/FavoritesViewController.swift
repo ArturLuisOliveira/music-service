@@ -11,7 +11,7 @@ class FavoritesViewController: UIViewController {
     
     private var controller: FavoritesController?
     @IBOutlet weak var favoritesTableView: UITableView!
-    
+    @IBOutlet weak var playingView: PlayingView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
