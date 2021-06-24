@@ -66,8 +66,6 @@ class CollectionEditorViewController: UIViewController {
     }
     
     @IBAction func goToCollectionsDetails(_ sender: Any) {
-        print("goToCollectionsDetails")
-        print(self.collection)
         performSegue(withIdentifier: "ToCollectionsDetailsSegue", sender: self.collection)
     }
 }

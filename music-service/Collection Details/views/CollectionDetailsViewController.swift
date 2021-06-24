@@ -28,7 +28,7 @@ class CollectionDetailsViewController: UIViewController {
 extension CollectionDetailsViewController:UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
-        2
+        collection?.type == .album ? 2 : 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         1
@@ -39,10 +39,12 @@ extension CollectionDetailsViewController:UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "Header") as! CollectionDetailsHeaderTableViewCell
             cell.collection = self.collection
+            cell.awakeFromNib()
             return cell
         } else {
             let cell = self.tableView.dequeueReusableCell(withIdentifier: "Content") as! CollectionDetailsContentTableViewCell
             cell.collection = self.collection
+            cell.awakeFromNib()
             return cell
         }
         

@@ -8,6 +8,15 @@
 import Foundation
 import UIKit
 
-protocol Collectable: UITableViewCell {
-    var collection: MusicCollection? { get set }
+struct ColllectionDetailsController {
+    static func getCollectionImage(id: String) -> UIImage? {
+        do {
+            let musicService = try MusicService()
+            let image = musicService.getCoverImage(forItemIded: id)
+            return image
+        } catch {
+            print("Error getting image.")
+        }
+        return nil
+    }
 }
