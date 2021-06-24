@@ -42,7 +42,6 @@ class FavoritesController {
     func fetchFavorites() {
         do {
             musicService = try MusicService()
-            collections = musicService?.loadLibrary()
             favoriteMusics = musicService?.favoriteMusics ?? favoritesMusicList
         } catch {
             print(error)
