@@ -170,6 +170,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
+                                <color key="backgroundColor" systemColor="quaternarySystemFillColor"/>
                                 <constraints>
                                     <constraint firstItem="kSc-kS-ogd" firstAttribute="leading" secondItem="KnG-Gb-k1q" secondAttribute="leading" id="1YS-aX-qwN"/>
                                     <constraint firstAttribute="bottom" secondItem="kSc-kS-ogd" secondAttribute="bottom" id="5Dq-XG-Sfh"/>
@@ -248,6 +249,9 @@
         <image name="07f3fdeaaf7c7c55c061" width="300" height="300"/>
         <image name="heart.fill" catalog="system" width="128" height="109"/>
         <image name="pause.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="quaternarySystemFillColor">
+            <color red="0.45490196078431372" green="0.45490196078431372" blue="0.50196078431372548" alpha="0.080000000000000002" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
